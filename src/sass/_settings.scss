@@ -8,8 +8,14 @@ html {
   box-sizing: inherit;
 }
 
+html,
 body {
-  font-family: 'asd', sans-serif;
+  height: 100%;
+}
+
+body {
+  font-family: 'SpaceGrotesk', sans-serif;
+  font-size: 20px;
   background-color: var(--color-white);
   scroll-behavior: smooth;
 }
@@ -21,11 +27,6 @@ img {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-html,
-body {
-  height: 100%;
 }
 
 .wrapper {
@@ -42,7 +43,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 0 15px;
 }

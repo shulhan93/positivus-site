@@ -1,0 +1,16 @@
+.header {
+  padding: 60px 0 70px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  gap: 3vw;
+  font-weight: 400;
+}
