@@ -1,9 +1,9 @@
-.hero {
-}
-.hero__container {
+.hero__inner {
+  margin-bottom: 70px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 .hero__content {
   max-width: 531px;
   grid-column: 6 span;
@@ -12,6 +12,7 @@
   align-items: start;
   gap: 30px;
 }
+
 .hero__title {
   font-size: 60px;
   font-weight: 500;
@@ -26,5 +27,17 @@
 
   img {
     margin-left: auto;
+  }
+}
+
+.hero__partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+}
+.hero__partner {
+  img {
+    filter: grayscale(1);
   }
 }
