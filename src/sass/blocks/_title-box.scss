@@ -1,0 +1,16 @@
+.title-box {
+  margin-bottom: 85px;
+  display: flex;
+  gap: 40px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-green);
+  }
+
+  &__description {
+    font-size: 18px;
+    max-width: 580px;
+  }
+}
