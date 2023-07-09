@@ -4,9 +4,11 @@
   gap: 40px;
 
   &__title {
+    padding: 0 7px;
     display: flex;
     align-items: center;
     background-color: var(--color-green);
+    border-radius: 7px;
   }
 
   &__description {
