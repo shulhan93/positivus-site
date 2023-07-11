@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "stylelint-config-prettier-scss",
+    { "rule-empty-line-before": "always" }
+  ]
+}

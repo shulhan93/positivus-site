@@ -1,6 +1,7 @@
 .cta {
   padding: 24px 0;
 }
+
 .cta__inner {
   position: relative;
   padding: 60px;
@@ -10,6 +11,7 @@
   background-color: var(--color-gray);
   border-radius: 45px;
 }
+
 .cta__content {
   display: flex;
   flex-direction: column;
@@ -17,13 +19,16 @@
   gap: 26px;
   grid-column: 6 span;
 }
+
 .cta__title {
   font-size: 30px;
   font-weight: 500;
 }
+
 .cta__description {
   font-size: 18px;
 }
+
 .cta__img {
   position: absolute;
   right: 135px;
