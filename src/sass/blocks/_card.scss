@@ -1,0 +1,55 @@
+.card {
+  grid-column: 4 span;
+  padding: 40px 35px;
+  border-radius: 45px;
+  border: 1px solid var(--color-dark);
+  background: var(--color-white);
+  box-shadow: 0px 5px 0px 0px var(--color-dark);
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0px 0px 0px 0px var(--color-dark);
+  }
+}
+.card__header {
+  padding-bottom: 28px;
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.card__about-box {
+  align-self: flex-end;
+}
+
+.card__name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card__work {
+  font-size: 18px;
+}
+
+.card__social {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+  border-radius: 100%;
+
+  svg path {
+    fill: var(--color-green);
+  }
+}
+
+.card__description {
+  padding-top: 29px;
+  font-size: 18px;
+  border-top: 1px solid var(--color-dark);
+}

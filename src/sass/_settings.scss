@@ -1,11 +1,7 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html,
@@ -43,7 +39,7 @@ a {
 }
 
 .container {
-  max-width: 1210px;
+  max-width: 1270px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -54,12 +50,6 @@ a {
 
 .visually-hidden {
   @include visually-hidden;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
 }
 
 section {
