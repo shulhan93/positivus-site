@@ -11,13 +11,13 @@
 .form {
   max-width: 556px;
 }
+
 .form__radio-btns {
   margin-bottom: 40px;
   display: flex;
   gap: 35px;
 }
-.form__radio {
-}
+
 .form__radio input[type='radio'] {
   display: none;
 }
@@ -55,10 +55,14 @@
   height: 16px;
   left: 6px;
   top: 6px;
+  transform-origin: center;
+  transform: scale(0);
+  transition: all 0.3s;
 }
 
 .form__radio input[type='radio']:checked + label:after {
   background-color: var(--color-green);
+  transform: scale(1);
 }
 
 .form__radio label:hover:before {
@@ -69,8 +73,6 @@
   filter: grayscale(100%);
 }
 
-.form__body {
-}
 .form__item {
   display: flex;
   flex-direction: column;
@@ -102,11 +104,11 @@
     font-size: 16px;
   }
 }
-.btn {
-}
+
 .form__submit {
   margin-top: 40px;
 }
+
 .contacts__img {
   position: absolute;
   top: 60px;
