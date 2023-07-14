@@ -10,6 +10,10 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 40px;
+
+  @include mobile {
+    gap: 20px;
+  }
 }
 .services__item {
   height: 310px;
@@ -71,6 +75,14 @@
       fill: var(--color-black);
     }
   }
+
+  @include tablet {
+    grid-column: 12 span;
+  }
+
+  @include mobile {
+    position: relative;
+  }
 }
 .services__item-content {
   height: 100%;
@@ -82,6 +94,10 @@
   font-weight: 500;
   font-size: 30px;
 
+  @include tablet {
+    font-size: 26px;
+  }
+
   span {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -89,6 +105,12 @@
     max-width: 207px;
     border-radius: 7px;
     padding: 0 7px;
+  }
+}
+
+.services__item-link-text {
+  @include mobile {
+    display: none;
   }
 }
 .services__item-link {
@@ -107,6 +129,14 @@
   border-radius: 100%;
 }
 .services__item-img {
+  @include mobile {
+    width: 40%;
+
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+  }
   img {
+    width: auto;
   }
 }

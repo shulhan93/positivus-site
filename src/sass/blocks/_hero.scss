@@ -1,9 +1,13 @@
-.hero {
-}
 .hero__inner {
-  margin-bottom: 70px;
+  margin: 70px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+
+  @include mobile {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
 }
 
 .hero__content {
@@ -13,30 +17,58 @@
   flex-direction: column;
   align-items: start;
   gap: 30px;
+
+  @include mobile {
+    grid-column: 12 span;
+    max-width: none;
+  }
+}
+
+.hero__btn {
+  @include mobile {
+    margin: 0 auto;
+  }
 }
 
 .hero__title {
   font-size: 60px;
   font-weight: 500;
+  @include tablet {
+    font-size: 43px;
+  }
 }
 
 .hero__description {
   max-width: 498px;
   line-height: 28px;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 .hero__img {
   grid-column: 6 span;
 
+  @include mobile {
+    margin-top: 10px;
+    grid-column: 12 span;
+  }
+
   img {
     margin-left: auto;
+
+    @include mobile {
+      margin: 0 auto;
+    }
   }
 }
 
 .hero__partners {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 96px;
+  justify-content: center;
+  gap: 5vw;
 }
 .hero__partner {
   img {

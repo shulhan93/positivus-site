@@ -1,5 +1,4 @@
 import './sass/main.scss';
-// Swiper
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -41,4 +40,12 @@ processContainer.addEventListener('click', (e) => {
     element.classList.remove('open');
   });
   process.classList.toggle('open');
+});
+
+// Menu
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header__nav');
+
+burger.addEventListener('click', () => {
+  menu.classList.toggle('open');
 });

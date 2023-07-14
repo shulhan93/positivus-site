@@ -7,6 +7,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -54,4 +55,12 @@ a {
 
 section {
   margin-bottom: 140px;
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+}
+
+.none {
+  display: none;
 }
