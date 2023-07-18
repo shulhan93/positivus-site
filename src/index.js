@@ -4,7 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 
 // init Swiper:
 // eslint-disable-next-line no-new
-new Swiper('.testimonials-slider', {
+const sliderTestimonials = new Swiper('.testimonials-slider', {
   modules: [Navigation, Pagination],
   pagination: {
     clickable: true,
@@ -28,6 +28,30 @@ new Swiper('.testimonials-slider', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+sliderTestimonials.init();
+
+const swiperStudies = new Swiper('.studies__slider', {
+  breakpoints: {
+    // when window width is >= 320px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 128,
+    },
+
+    768: {
+      slidesPerView: 2.3,
+      spaceBetween: 40,
+    },
+
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+  },
+});
+
+swiperStudies.init();
 
 const processContainer = document.querySelector('.process__inner');
 

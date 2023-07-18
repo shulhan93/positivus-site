@@ -11,6 +11,9 @@
   }
 
   &__title {
+    display: inline-block;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     padding: 0 7px;
     display: flex;
     align-items: center;
@@ -19,6 +22,7 @@
 
     @include mobile {
       font-size: 36px;
+      text-align: center;
     }
   }
 

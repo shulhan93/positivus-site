@@ -1,9 +1,9 @@
 .services {
   margin-bottom: 100px;
-}
-.container {
-}
-.services__container {
+
+  @include mobile {
+    margin-bottom: 70px;
+  }
 }
 
 .services__inner {
