@@ -10,25 +10,47 @@
   &:hover {
     box-shadow: 0px 0px 0px 0px var(--color-dark);
   }
+
+  @include desktop {
+    grid-column: 6 span;
+  }
+
+  @include mobile {
+    margin-top: 30px;
+    grid-column: 12 span;
+  }
 }
 .card__header {
   padding-bottom: 28px;
   position: relative;
   display: flex;
   gap: 20px;
+
+  @include mobile {
+    padding-bottom: 20px;
+  }
 }
 
 .card__about-box {
+  padding-right: 30px;
   align-self: flex-end;
 }
 
 .card__name {
   font-size: 20px;
   font-weight: 500;
+
+  @include mobile {
+    font-size: 18px;
+  }
 }
 
 .card__work {
   font-size: 18px;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .card__social {
@@ -48,8 +70,21 @@
   }
 }
 
+.card__photo {
+  img {
+    width: 107px;
+    height: 107px;
+    max-width: none;
+  }
+}
+
 .card__description {
   padding-top: 29px;
   font-size: 18px;
   border-top: 1px solid var(--color-dark);
+
+  @include mobile {
+    font-size: 16px;
+    padding-top: 20px;
+  }
 }
