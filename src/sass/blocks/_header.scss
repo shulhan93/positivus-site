@@ -50,6 +50,8 @@
     padding-bottom: 100px;
     transition: all 0.3s;
 
+    z-index: 100;
+
     &.open {
       right: 0;
     }

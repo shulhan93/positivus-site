@@ -1,7 +1,22 @@
+.footer {
+  .logo {
+    @include mobile {
+      width: 144px;
+      margin-bottom: 37px;
+    }
+  }
+}
+
 .footer__container {
   padding: 55px 60px 50px 60px;
   background-color: var(--color-dark);
   border-radius: 45px 45px 0px 0px;
+
+  @include mobile {
+    border-radius: 0;
+    padding: 50px 20px 30px;
+    padding-top: 50px;
+  }
 }
 
 .footer__nav {
@@ -9,16 +24,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @include mobile {
+    margin-bottom: 37px;
+  }
 }
 
 .footer-menu {
   display: flex;
   gap: 40px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
 
 .footer-menu__link {
   color: var(--color-white);
   text-decoration-line: underline;
+
+  @include mobile {
+    text-decoration: none;
+  }
 }
 
 .social-link {
@@ -41,6 +76,13 @@
 .footer__body {
   display: flex;
   justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+  }
 }
 
 .footer__title {
@@ -51,6 +93,18 @@
   font-weight: 500;
   border-radius: 7px;
   background-color: var(--color-green);
+
+  @include mobile {
+    margin-bottom: 37px;
+    font-size: 18px;
+  }
+}
+
+.footer__contacts {
+  @include mobile {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 .footer__contacts-item {
   color: var(--color-white);
@@ -65,6 +119,15 @@
   padding: 50px 40px;
   border-radius: 14px;
   background-color: #292a32;
+
+  @include tablet {
+    padding: 30px;
+  }
+
+  @include mobile {
+    justify-content: center;
+    max-width: none;
+  }
 }
 
 .footer-form {
@@ -72,6 +135,11 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .footer-form__item {
@@ -81,16 +149,43 @@
     border-radius: 14px;
     border: 1px solid #fff;
     background-color: transparent;
+
+    &::placeholder {
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    @include mobile {
+      padding: 21px 25px;
+    }
+  }
+
+  button {
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    width: 100%;
   }
 }
 
 .footer__copy {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 51px;
   padding-top: 51px;
   border-top: 1px solid var(--color-gray);
   color: var(--color-white);
+
+  @include mobile {
+    font-size: 16px;
+    justify-content: center;
+    gap: 15px;
+  }
 }
 
 .privacy-policy {

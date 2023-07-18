@@ -17,15 +17,38 @@ const sliderTestimonials = new Swiper('.testimonials-slider', {
       </span>`;
     },
   },
-  centeredSlides: true,
-  slidesPerView: 2,
-  spaceBetween: 50,
-  slidesPerGroup: 1,
-  initialSlide: 1,
+  // centeredSlides: true,
+  // slidesPerView: 2,
+  // spaceBetween: 50,
+  // slidesPerGroup: 1,
+  // initialSlide: 1,
 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    992: {
+      centeredSlides: true,
+      slidesPerView: 2,
+      spaceBetween: 50,
+      slidesPerGroup: 1,
+      initialSlide: 1,
+    },
+
+    768: {
+      centeredSlides: true,
+      slidesPerView: 2,
+      spaceBetween: 20,
+      initialSlide: 1,
+    },
+
+    320: {
+      centeredSlides: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
   },
 });
 
@@ -33,7 +56,6 @@ sliderTestimonials.init();
 
 const swiperStudies = new Swiper('.studies__slider', {
   breakpoints: {
-    // when window width is >= 320px
     992: {
       slidesPerView: 3,
       spaceBetween: 128,
